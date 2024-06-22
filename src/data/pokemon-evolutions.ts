@@ -54,6 +54,8 @@ export enum EvolutionItem {
   SYRUPY_APPLE
 }
 
+export type EvolutionLevel = [Species, integer];
+
 export type EvolutionConditionPredicate = (p: Pokemon) => boolean;
 export type EvolutionConditionEnforceFunc = (p: Pokemon) => void;
 
