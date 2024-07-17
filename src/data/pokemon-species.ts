@@ -780,7 +780,7 @@ export default class PokemonSpecies extends PokemonSpeciesForm implements Locali
 
   // This could definitely be written better and more accurate to the getSpeciesForLevel logic, but it is only for generating movesets for evolved Pokemon
 
-  getSimulatedEvolutionChain(currentLevel: integer, forTrainer: boolean = false, isBoss: boolean = false, player: boolean = false): [Species, integer][] {
+  getSimulatedEvolutionChain(currentLevel: integer, forTrainer: boolean = false, isBoss: boolean = false, player: boolean = false): EvolutionLevel[] {
     const ret: EvolutionLevel[] = [];
     if (pokemonPrevolutions.hasOwnProperty(this.speciesId)) {
       const prevolutionLevels = this.getPrevolutionLevels().reverse();
